@@ -1,0 +1,12 @@
+{% extends 'voluntarios/base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Bienvenido a la plataforma de gestión de voluntarios</h1>
+    <p>Desde aquí puedes administrar voluntarios y eventos de tu ONG.</p>
+    <a href="{% url 'voluntario_list' %}" class="btn btn-primary m-2">Ver Voluntarios</a>
+    <a href="{% url 'evento_list' %}" class="btn btn-success m-2">Ver Eventos</a>
+</div>
+{% endblock %}
